@@ -10,8 +10,7 @@ va_list args;
 int i = 0;
 unsigned int character;
 char *string;
-int z = 0;
-int num = 0;
+int z = 0, num = -1;
 va_start(args, format);
 while (format[i] != '\0')
 {
@@ -21,16 +20,16 @@ i++;
 switch (format[i])
 {
 case 'c':
+num++;
 character = va_arg(args, int);
 _putchar(character);
-num++;
 break;
 case 's':
 string = va_arg(args, char *);
 while (string[z] != '\0')
 {
-_putchar(string[z]);
 num++;
+_putchar(string[z]);
 z++;
 }
 z = 0;
@@ -39,10 +38,12 @@ break;
 }
 else
 {
+num++;
 _putchar(format[i]);
 }
 i++;
 }
 va_end(args);
+printf("num is :%d\n", num);
 return (num);
 }
