@@ -44,6 +44,5 @@ _putchar(format[i]);
 i++;
 }
 va_end(args);
-printf("the number is %d\n", num);
 return (num);
 }
