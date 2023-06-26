@@ -35,8 +35,11 @@ z = 0;
 break;
 case 'd':
 y = va_arg(args, int);
-(y == (int)y) ?	_printint(y) : _putchar('y');
-printf("5");
+if (y == (int)y)
+{
+_printtnumbers(y);
+_putchar('y');
+}
 break;
 default:
 num++;
