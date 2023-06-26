@@ -37,7 +37,7 @@ case 'd':
 y = va_arg(args, int);
 if (y == (int)y)
 {
-_printfnumbers(y);
+_printnumbers(y);
 _putchar(y);
 }
 break;

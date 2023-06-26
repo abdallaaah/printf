@@ -6,5 +6,5 @@
 #include <unistd.h>
 void _putchar(char c);
 int _printf(char *format, ...);
-void _printfnumbers(int y);
+void _printnumbers(int y);
 #endif
