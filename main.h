@@ -6,4 +6,5 @@
 #include <unistd.h>
 void _putchar(char c);
 int _printf(char *format, ...);
+void _printint(int m);
 #endif
