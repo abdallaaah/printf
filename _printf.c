@@ -34,7 +34,7 @@ z++;
 z = 0;
 break;
 case 'd':
-while(b-- )
+while (b--)
 {
 va_arg(args, int);
 _printint(y);
