@@ -25,11 +25,6 @@ _putchar(character);
 break;
 case 's':
 string = va_arg(args, char *);
-if (string == NULL)
-{
-printf("(nil)");
-break;
-}
 while (string[z] != '\0')
 {
 num++;
@@ -42,15 +37,12 @@ default:
 num++;
 _putchar(format[i]);
 break;
-}
-}
+}}
 else
 {
 num++;
 _putchar(format[i]);
-}
-i++;
-}
-va_end(args);
+} i++;
+} va_end(args);
 return (num);
 }
