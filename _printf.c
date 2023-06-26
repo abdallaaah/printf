@@ -38,7 +38,7 @@ y = va_arg(args, int);
 if (y == (int)y)
 {
 _printfnumbers(y);
-_putchar('y');
+_putchar(y);
 }
 break;
 default:
