@@ -33,6 +33,10 @@ z++;
 }
 z = 0;
 break;
+case 'd':
+va_arg(args, int);
+_printint();
+break;
 default:
 num++;
 _putchar(format[i]);
