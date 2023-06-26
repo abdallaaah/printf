@@ -7,10 +7,9 @@
 int _printf(char *format, ...)
 {
 va_list args;
-int i = 0;
 unsigned int character;
 char *string;
-int z = 0, num = 0;
+int z = 0, num = 0, i = 0;
 va_start(args, format);
 while (format[i] != '\0')
 {
@@ -26,6 +25,11 @@ _putchar(character);
 break;
 case 's':
 string = va_arg(args, char *);
+if (string == NULL)
+{
+printf("(nil)");
+break;
+}
 while (string[z] != '\0')
 {
 num++;
