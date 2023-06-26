@@ -9,7 +9,7 @@ int _printf(char *format, ...)
 va_list args;
 unsigned int character;
 char *string;
-int z = 0, num = 0, i = 0;
+int y, z = 0, num = 0, i = 0;
 va_start(args, format);
 while (format[i] != '\0')
 {
@@ -32,6 +32,10 @@ _putchar(string[z]);
 z++;
 }
 z = 0;
+break;
+case 'd':
+y = va_arg(args, int);
+(y == (int)y) ?	_printint(y) : _putchar('y');
 break;
 default:
 num++;
