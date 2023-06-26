@@ -9,8 +9,11 @@
  */
 int main(void)
 {
-/*_printf("Character:[%c]hello\n", 'H');*/
-_printf("String:[%s]\n", "I am a string !");
-printf("String:[%s]\n", "I am a string !");
+char *str = "I am a string !";
+char *str2 = "I am a string2 !";
+printf("Character:[%c]hello[%c]\n", 'H', 'h');
+_printf("Character:[%c]hello[%c]\n", 'H', 'h');
+printf("String:[%s][%s]\n", str, str2);
+_printf("String:[%s][%s]\n", str, str2);
 return (0);
 }

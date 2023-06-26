@@ -10,7 +10,7 @@ va_list args;
 int i = 0;
 unsigned int character;
 char *string;
-int z = 0, num = -1;
+int z = 0, num = 0;
 va_start(args, format);
 while (format[i] != '\0')
 {
