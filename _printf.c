@@ -35,7 +35,8 @@ z = 0;
 break;
 case 'd':
 y = va_arg(args, int);
-_printint();
+_printint(y);
+_putchar(y);
 break;
 default:
 num++;
