@@ -36,7 +36,7 @@ break;
 case 'd':
 while (b--)
 {
-va_arg(args, int);
+y = va_arg(args, int);
 _printint(y);
 _putchar(y);
 }
