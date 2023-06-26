@@ -34,6 +34,10 @@ z++;
 }
 z = 0;
 break;
+default:
+num++;
+_putchar(format[i]);
+break;
 }
 }
 else
