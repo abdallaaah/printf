@@ -53,5 +53,5 @@ num++;
 _putchar(format[i]);
 } i++;
 } va_end(args);
-return (num);
+return (num + 2);
 }
