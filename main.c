@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-int y  = 25;
+int y  = 999;
 char *str = "I am a string !";
 char *str2 = "I am a string2 !";
 printf("Character:[%c]hello[%c]\n", 'H', 'h');
