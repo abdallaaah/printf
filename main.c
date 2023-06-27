@@ -17,5 +17,7 @@ printf("String:[%s][%s]\n", str, str2);
 _printf("String:[%s][%s]\n", str, str2);
 printf("length:[%d]\n", 899);
 _printf("length:[%d]\n", 899);
+printf("length:[%i]\n", 0x2a);
+_printf("length:[%i]\n", 0x2a);
 return (0);
 }

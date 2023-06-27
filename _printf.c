@@ -7,7 +7,7 @@
 int _printf(char *format, ...)
 {
 va_list args;
-unsigned int character;
+unsigned int character, yy;
 char *string;
 int y, z = 0, num = 0, i = 0;
 va_start(args, format);
@@ -36,6 +36,10 @@ break;
 case 'd':
 y = va_arg(args, int);
 _printnumbers(y);
+break;
+case 'i':
+yy = va_arg(args, unsigned int);
+_printnumbers(yy);
 break;
 default:
 num++;
