@@ -5,7 +5,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
-void _putchar(char c);
+int _putchar(char c);
 int _printf(char *format, ...);
 void _printnumbers(int y);
 #endif

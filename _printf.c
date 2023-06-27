@@ -36,13 +36,13 @@ break;
 case 'd':
 y = va_arg(args, int);
 _printnumbers(y);
-_putchar(y);
 break;
 default:
 num++;
 _putchar(format[i]);
 break;
-}}
+}
+}
 else
 {
 num++;

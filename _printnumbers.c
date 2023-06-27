@@ -2,6 +2,7 @@
 /**
  * _printnumbers - prints an integer
  * @m: int printed
+ * Return: it is void no return
  */
 void _printnumbers(int m)
 {
