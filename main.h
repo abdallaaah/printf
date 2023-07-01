@@ -8,4 +8,5 @@
 int _putchar(char c);
 int _printf(char *format, ...);
 int _printnumbers(int m, int count);
+char* convert(unsigned int num, int base);
 #endif
