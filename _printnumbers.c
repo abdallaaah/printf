@@ -25,6 +25,7 @@ count++;
 }
 if (m < 0)
 {
+count++;
 _putchar('-');
 m = -m;
 }
