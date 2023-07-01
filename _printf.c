@@ -6,9 +6,10 @@
  */
 int _printf(char *format, ...)
 {
+int num_integ = 0;
 va_list args;
 unsigned int character, yy;
-char *string;
+char *string = NULL;
 int y, z = 0, num = 0, i = 0;
 va_start(args, format);
 while (format[i] != '\0')
@@ -25,6 +26,11 @@ _putchar(character);
 break;
 case 's':
 string = va_arg(args, char *);
+if (string == NULL)
+{
+printf("string is null");
+break;
+}
 while (string[z] != '\0')
 {
 num++;
@@ -35,11 +41,11 @@ z = 0;
 break;
 case 'd':
 y = va_arg(args, int);
-_printnumbers(y);
+num = _printnumbers(y, num_integ);
 break;
 case 'i':
 yy = va_arg(args, unsigned int);
-_printnumbers(yy);
+num = _printnumbers(yy, num_integ);
 break;
 default:
 num++;
