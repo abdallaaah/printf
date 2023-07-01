@@ -44,8 +44,12 @@ y = va_arg(args, int);
 num = _printnumbers(y, num_integ);
 break;
 case 'i':
-yy = va_arg(args, unsigned int);
+yy = va_arg(args, long int);
 num = _printnumbers(yy, num_integ);
+break;
+case 'l':
+y = va_arg(args, int);
+num = _printnumbers(y, num_integ);
 break;
 default:
 num++;
@@ -57,7 +61,9 @@ else
 {
 num++;
 _putchar(format[i]);
-} i++;
-} va_end(args);
+}
+i++;
+}
+va_end(args);
 return (num);
 }
