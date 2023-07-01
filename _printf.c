@@ -40,15 +40,15 @@ z++;
 z = 0;
 break;
 case 'd':
-y = va_arg(args, int);
+y = va_arg(args, unsigned long int);
 num = _printnumbers(y, num_integ);
 break;
 case 'i':
-yy = va_arg(args, long int);
+yy = va_arg(args,unsigned long int);
 num = _printnumbers(yy, num_integ);
 break;
 case 'l':
-y = va_arg(args, int);
+y = va_arg(args, unsigned long int);
 num = _printnumbers(y, num_integ);
 break;
 default:
